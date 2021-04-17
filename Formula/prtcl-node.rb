@@ -1,4 +1,4 @@
-class PRTCLNode < Formula
+class PrtclNode < Formula
   desc "node.js dependency for prtcl (Particle CLI vNext)"
   homepage "https://docs.particle.io/cli"
   url "https://nodejs.org/download/release/v12.22.1/node-v12.22.1-darwin-x64.tar.xz"

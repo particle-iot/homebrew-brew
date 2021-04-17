@@ -1,4 +1,4 @@
-class PRTCL < Formula
+class Prtcl < Formula
   desc "prtcl (Particle CLI vNext)"
   homepage "https://docs.particle.io/cli"
   url "https://prtcl.s3.amazonaws.com/prtcl-v1.0.0/prtcl-v1.0.0.tar.gz"
