@@ -1,8 +1,8 @@
 class Prtcl < Formula
   desc "prtcl (Particle CLI vNext)"
   homepage "https://docs.particle.io/cli"
-  url "https://prtcl.s3.amazonaws.com/prtcl-v1.0.3/prtcl-v1.0.3.tar.gz"
-  sha256 "44efb17c4e0fb82aef649f7c115e6568bf52c160b6084c9782931a51ea94d4fd"
+  url "https://prtcl.s3.amazonaws.com/prtcl-v1.0.4/prtcl-v1.0.4.tar.gz"
+  sha256 "d59b0f7064a1fe7b9a3a717dd355d046420412bfef826ad734eee2740deaa7d9"
   depends_on "particle-iot/brew/prtcl-node" => "12.22.1"
 
   def install
@@ -10,27 +10,7 @@ class Prtcl < Formula
     inreplace "bin/prtcl", "\"$DIR/node\"", Formula["prtcl-node"].opt_bin/"node"
     libexec.install Dir["*"]
     bin.install_symlink libexec/"bin/prtcl"
-
-    # bash_completion.install "#{libexec}/node_modules/@particle/prtcl/plugin-autocomplete/autocomplete/brew/bash"
-    # zsh_completion.install "#{libexec}/node_modules/@particle/prtcl/plugin-autocomplete/autocomplete/brew/zsh/_prtcl"
   end
-
-  # def caveats; <<~EOS
-  #   To use the prtcl's autocomplete --
-  #     Via homebrew's shell completion:
-  #       1) Follow homebrew's install instructions https://docs.brew.sh/Shell-Completion
-  #           NOTE: For zsh, as the instructions mention, be sure compinit is autoloaded
-  #                 and called, either explicitly or via a framework like oh-my-zsh.
-  #       2) Then run
-  #         $ prtcl autocomplete --refresh-cache
-  #
-  #     OR
-  #
-  #     Use our standalone setup:
-  #       1) Run and follow the install steps:
-  #         $ prtcl autocomplete
-  # EOS
-  # end
 
   test do
     system bin/"prtcl", "version"
