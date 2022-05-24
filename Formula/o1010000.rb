@@ -1,4 +1,4 @@
-class o1010000 < Formula
+class O1010000 < Formula
   desc "o1010000 Experimental CLI"
   homepage "https://docs.particle.io/cli"
   url "https://o1010000.s3.amazonaws.com/o1010000-v1.0.0/o1010000-v1.0.0.tar.gz"
