@@ -1,4 +1,4 @@
-class PRTCL < Formula
+class Prtcl < Formula
   desc "The new Particle CLI - a work in-progress - for current CLI, visit: https://github.com/particle-iot/particle-cli"
   homepage "https://docs.particle.io/cli"
   url "https://prtcl.s3.amazonaws.com/prtcl-v1.7.18/prtcl-v1.7.18.tar.gz"
