@@ -1,8 +1,8 @@
 class O1010000 < Formula
   desc "Experimental `o1010000` CLI from Particle"
   homepage "https://docs.particle.io/cli"
-  url "https://o1010000.s3.amazonaws.com/o1010000-v1.2.1/o1010000-v1.2.1.tar.gz"
-  sha256 "2fda828d6f1c990941b52bb2529329b38ad49cc5f3757e1e3dc041abf39a63a1"
+  url "https://o1010000.s3.amazonaws.com/o1010000-v1.2.2/o1010000-v1.2.2.tar.gz"
+  sha256 "3fd62afd9714bf0681758c235385426436f56f4472614f55025c2ff3d089da0d"
   depends_on "particle-iot/brew/o1010000-node" => "12.22.1"
 
   def install
@@ -16,3 +16,4 @@ class O1010000 < Formula
     system bin/"o1010000", "version"
   end
 end
+
