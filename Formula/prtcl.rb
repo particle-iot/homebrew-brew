@@ -1,8 +1,8 @@
 class Prtcl < Formula
   desc "The new Particle CLI - a work in-progress - for current CLI, visit: https://github.com/particle-iot/particle-cli"
   homepage "https://docs.particle.io/cli"
-  url "https://prtcl.s3.amazonaws.com/prtcl-v1.9.6/prtcl-v1.9.6.tar.gz"
-  sha256 "aacc023555bf1943d2fd2b30c2b52bf1e29f5d2753fe8a5b9dd4cb2647e41432"
+  url "https://prtcl.s3.amazonaws.com/prtcl-v1.9.7/prtcl-v1.9.7.tar.gz"
+  sha256 "d19d8a5b9337068ef7f82e3133f79a857820b9d003b21babc215b45c79776964"
   depends_on "particle-iot/brew/prtcl-node" => "12.22.1"
 
   def install
